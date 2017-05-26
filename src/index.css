@@ -424,14 +424,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #444;
+  background-color: #121d1f;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #444;
+  background-color: #121d1f;
 }
 .btn-outline {
   color: white;
@@ -447,7 +447,7 @@ footer .footer-below {
 .btn-outline.active {
   color: #2980b9;
   background: white;
-  border: solid 2px white;
+
 }
 
 .conta p{
@@ -540,10 +540,10 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-social {
   display: inline-block;
-  height: 50px;
-  width: 50px;
-  border: 2px solid white;
-  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  border: 0px solid white;
+  border-radius: 5px;
   text-align: center;
   font-size: 20px;
   line-height: 45px;
@@ -713,4 +713,27 @@ div#maincontent {
 
 .accessTitle{
   font-size: 30px;
+}
+
+.gbfooter{
+  background: #121d1f;
+  text-align: right;
+  padding: 20px;
+}
+
+.pfooter p {
+  font-size: 16px;
+}
+.pfooter span{
+  position: relative;
+  top: -5px;
+}
+
+.noPadding{
+  padding: 0px !important;
+}
+
+.suscrib{
+  position: relative;
+  left: -5px;
 }
