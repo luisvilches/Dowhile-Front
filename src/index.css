@@ -15,15 +15,18 @@ a:active,
 a.active {
   color: #2980b9;
 }
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
   text-transform: uppercase;
   font-weight: 700;
+}
+h1{
+    font-family: 'Comfortaa', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 hr.star-light,
 hr.star-primary {
@@ -140,6 +143,10 @@ hr.star-primary:after {
     width: 100%;
   }
 
+}
+
+.monse{
+  font-family: 'Montserrat', sans-serif;
 }
 .footer-col h3 {
   font-family: 'Comfortaa', cursive;
@@ -310,6 +317,7 @@ section h2 {
 section.success {
   background: #3498db;
   color: white;
+  min-height: 360px;
 }
 @media (max-width: 767px) {
   section {
@@ -722,7 +730,7 @@ div#maincontent {
 }
 
 .pfooter p {
-  font-size: 16px;
+  font-size: 15px;
 }
 .pfooter span{
   position: relative;
@@ -736,4 +744,49 @@ div#maincontent {
 .suscrib{
   position: relative;
   left: -5px;
+}
+
+.blogTitle{
+  font-size: 50px;
+}
+
+.bgWhite{
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 2px #ccc;
+}
+
+.bgWhite:hover{
+  background: #f8f8f8;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.imgPost{
+  min-width: 100%;
+}
+
+.blogContent{
+  font-size: 18px;
+}
+.clientesHome{
+  max-height: 67px;
+  margin: 0 auto;
+}
+
+.slick-track{
+  margin-bottom: 40px;
+}
+
+#clientsHome img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.cen{
+  margin-left:auto;
+   margin-right:auto;
+   display:block;
 }

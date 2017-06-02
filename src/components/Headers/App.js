@@ -26,8 +26,7 @@ class App extends Component {
                             <br/>   
                             <br/>
                             <div className="form-group col-xs-12">
-                                <Link onClick={this.scrollStep.bind(this,'service')} className="btn btn-success btn-lg">Nuestros servicios</Link>
-                                <Link to='/contact' className="btn btn-success btn-lg pdl">Contactenos</Link>
+                                <Link to='/contact' className="btn btn-success btn-lg">Contactenos</Link>
                             </div>
                         </div>
                     </div>

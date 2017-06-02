@@ -51,6 +51,9 @@ class FooterContainer extends Component {
                             <Link to="/portfolio">Portafolio</Link>
                         </li>
                         <li className="page-scroll">
+                            <Link to="/blog">Blog</Link>
+                        </li>
+                        <li className="page-scroll">
                             <Link to="/area">Área de clientes</Link>
                         </li>
                         <li className="page-scroll">

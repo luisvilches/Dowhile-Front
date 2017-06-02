@@ -16,6 +16,3 @@ class BaseCompoenent extends Component{
 }
 
 export default BaseCompoenent;
-
-
-//

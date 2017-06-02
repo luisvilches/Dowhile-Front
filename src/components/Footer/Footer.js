@@ -13,7 +13,7 @@ class FooterContainer extends Component {
                         <br/>
                         <br/>
                         <div className="pfooter">
-                            <p><i className="material-icons">phone_android</i><span><b> Teléfono:</b> +56 9 8888 8888</span></p>
+                            <p><i className="material-icons">phone_android</i><span><b> Teléfono:</b> +56 9 8492 3552</span></p>
                             <p><i className="material-icons">mail</i><span><b> Email:</b> hola@dowhile.cl</span> </p>
                         </div>           
                     </div>

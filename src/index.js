@@ -8,6 +8,8 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contac';
 import Service from './components/Service/Service';
 import Login from './components/LoginClient/LoginClient';
+import Blog from './components/Blog/Blog';
+import BlogInterior from './components/BlogInterior/BlogInterior';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
@@ -20,6 +22,8 @@ ReactDOM.render(
             <Route path="portfolio" component={Portfolio} />
             <Route path="contact" component={Contact} />
             <Route path="area" component={Login} />
+            <Route path="blog" component={Blog} />
+            <Route path="blog/int" component={BlogInterior} />
         </Route>
     </Router>, document.getElementById('root'));
 registerServiceWorker();

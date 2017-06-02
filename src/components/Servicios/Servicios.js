@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
 
+var dev = 'http://localhost:5000'
+
 class FooterContainer extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            api: dev,
+            data: []
+        }
+    }
+
+    componentDidMount(){
+        fetch('http://localhost:5000/servicios')
+        .then(res => res.json())
+        .then(response => {
+            this.setState({
+                data: response.data
+            })
+        })
+    }
   render() {
     return (
       <section className="bgS" id="servicios"> 
@@ -14,21 +34,15 @@ class FooterContainer extends Component {
                     <br/>
                     <br/>
                 </div>
-                <div className="col-md-4 text-center">
-                    <i className="material-icons iconService">phone_iphone</i>
-                    <h4 className="service-heading">Aplicaciones moviles</h4>
-                    <p className="text-muted">Desarrollo de aplicaciones nativas e híbridas, nos ajustamos a los requerimientos de tu idea de negocio.</p>
-                </div>
-                <div className="col-md-4 text-center">
-                    <i className="material-icons iconService">web</i>
-                    <h4 className="service-heading">Desarrollo Web</h4>
-                    <p className="text-muted">Desarrollo de sistemas y portales web de fácil administración y que además cuentan con las más diversas herramientas.</p>
-                </div>
-                <div className="col-md-4 text-center">
-                    <i className="material-icons iconService">settings</i>
-                    <h4 className="service-heading">Desarrollo de sotware</h4>
-                    <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id mi eu neque eleifend posuere ac feugiat arcu. Donec aliquam</p>
-                </div>
+                {this.state.data.map((item,index) => {
+                    return(
+                        <div className="col-md-4 text-center">
+                            <i className="material-icons iconService">{item.icon}</i>
+                            <h4 className="service-heading">{item.name}</h4>
+                            <p className="text-muted">{item.description}</p>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     </section>
